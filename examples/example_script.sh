@@ -137,7 +137,7 @@ function finish_install {
 
 # ------------------------------ Running ------------------------------ #
 
-# Below installation
+# Before installation
 prepare_install
 
 # Running installation
