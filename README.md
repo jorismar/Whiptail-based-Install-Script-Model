@@ -25,3 +25,27 @@ update_progress 45
 5. Implement the **finish_install** function to display any desired end user information or to request some additional information.
 
 For more information, check out the sample script on the examples folder. If you need to change the installation order or add a new feature, edit the code at the end of the file at your own risk. =P
+
+## Dialogues Functions
+
+The dialog functions have three arguments, where the first is the message to be displayed, the second is the height of the window box and the third is the width.
+
+* Information dialog
+```
+show_message_dialog "Message" 7 50
+```
+
+* Question dialog
+```
+show_question_dialog "Message" 7 50
+```
+
+* Input text dialog
+```
+show_input_text_dialog "Message" 7 50
+```
+
+* Input password dialog
+```
+show_input_password_dialog "Message" 7 50
+```

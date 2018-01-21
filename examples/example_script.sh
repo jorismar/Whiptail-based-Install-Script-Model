@@ -125,8 +125,6 @@ function install {
     sleep 2
 
     callfunc your_custom_callback_1
-    sleep 2
-        
     update_progress 100;
     sleep 2
 }
