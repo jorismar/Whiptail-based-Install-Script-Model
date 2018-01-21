@@ -49,3 +49,7 @@ show_input_text_dialog "Message" 7 50
 ```
 show_input_password_dialog "Message" 7 50
 ```
+
+## Logging
+
+The information normally displayed in the terminal from the commands used is omitted and directed to the log file configured in the variable **$\_\_LOG\_FILE**.
