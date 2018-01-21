@@ -16,7 +16,7 @@ To implement your custom script using this model, watch out and follow the marke
 callfunc your_custom_function arg1 arg2 arg3 ... arg8
 ```
 
-4. To update the progress bar percentage, call the **update_progress** function anywhere in code, except within your custom functions and **never invoke dialog functions within the install or custom functions.** The following example update progress bar to 45%.
+4. To update the progress bar percentage, call the **update_progress** function anywhere in code, except within your custom functions and **never invoke dialog functions within the install or custom functions.** To access the current progress value use the variable **$\_\_PROGRESS\_COUNT**. The following example shown how to update the progress bar to 45%.
 
 ```
 update_progress 45
@@ -28,24 +28,24 @@ For more information, check out the sample script on the examples folder. If you
 
 ## Dialogues Functions
 
-The dialog functions have three arguments, where the first is the message to be displayed, the second is the height of the window box and the third is the width.
+The dialog functions have three arguments, where the first is the message to be displayed, the second is the height of the window box and the third is the width. The following examples shown how to use the dialogues functions.
 
-* Information dialog
+* Information dialog 
 ```
 show_message_dialog "Message" 7 50
 ```
 
-* Question dialog
+* Question dialog (Answer is accessed by the variable **$\_\_REQUESTED\_ANSWER** and the values can be true or false).
 ```
 show_question_dialog "Message" 7 50
 ```
 
-* Input text dialog
+* Input text dialog (The entered text is accessed by the variable **$\_\_REQUESTED\_TEXT**).
 ```
 show_input_text_dialog "Message" 7 50
 ```
 
-* Input password dialog
+* Input password dialog (The entered password text is accessed by the variable **$\_\_REQUESTED\_PASSWORD**).
 ```
 show_input_password_dialog "Message" 7 50
 ```
